@@ -1,0 +1,391 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Variabel Warna & Reset CSS */
+:root {
+    --primary-color: #004AAD;
+    --secondary-color: #FFC107;
+    --dark-color: #232323;
+    --light-color: #FFFFFF;
+    --gray-color: #f4f4f4;
+    --text-color: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tombol (Button) */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.btn-primary:hover {
+    background-color: #003a8c;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+.btn-secondary:hover {
+    background-color: #e6ac00;
+}
+
+/* Header Atas */
+.top-header {
+    background-color: var(--primary-color);
+    padding: 8px 0;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+.top-header .container {
+    color: var(--light-color);
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* Header Utama & Navigasi */
+.main-header {
+    background-color: var(--light-color);
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+    display: block;
+}
+
+.navbar ul li a i {
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.navbar ul li ul.dropdown li{
+    display: block;
+}
+.navbar ul li ul.dropdown{
+    background: var(--primary-color);
+    padding: 5px 20px;
+    position: absolute;
+    display: none;
+}
+.navbar ul li ul.dropdown li a {
+    color: var(--light-color);
+}
+.navbar ul li ul.dropdown li a:hover {
+    color: var(--secondary-color);
+}
+.navbar ul li:hover ul.dropdown {
+    display: block;
+}
+
+body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Gaya Umum */
+body {
+    font-family: sans-serif; /* Ganti dengan font yang diinginkan */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main .container {
+    width: 80%;
+    margin: 20px auto;
+    
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Gaya Informasi Kontak */
+.contact-info {
+    margin-bottom: 30px;
+    text-align: center; /* Menengahkan informasi kontak */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center; /* Menengahkan item informasi */
+}
+
+.info-item i {
+    margin-right: 10px;
+    color: #007bff; /* Warna ikon */
+    font-size: 20px;
+}
+
+/* Gaya Formulir Kontak */
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
+}
+
+.form-group textarea {
+    resize: vertical; /* Memungkinkan textarea diubah ukurannya secara vertikal */
+}
+
+button {
+    background-color: #007bff; /* Warna tombol */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna tombol saat dihover */
+}
+
+/* Gaya Lokasi */
+.location {
+    text-align: center;
+}
+
+.location iframe {
+    width: 100%; /* Lebar iframe responsif */
+    max-width: 600px; /* Batas lebar maksimum */
+    height: 400px; /* Tinggi iframe */
+    border: 0;
+    border-radius: 5px; /* Sudut membulat */
+}
+
+
+
+
+
+/* Footer */
+.main-footer {
+    background-color: var(--dark-color);
+    color: #ccc;
+    padding-top: 60px;
+}
+
+.main-footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    color: var(--light-color);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--light-color);
+}
+
+.social-icons a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--light-color);
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+}
+
+.footer-bottom {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+
+/* DESAIN RESPONSIVE */
+@media (max-width: 992px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 88px;
+        left: 0;
+        width: 100%;
+        background-color: var(--light-color);
+        flex-direction: column;
+        text-align: center;
+        border-top: 1px solid #eee;
+    }
+    .navbar.active {
+        display: flex;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .navbar ul li {
+        padding: 15px 0;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .header-actions {
+        display: none;
+    }
+    .info-cards .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .top-header { display: none; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content p { font-size: 1rem; }
+    .about-us .container {
+        flex-direction: column;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-cards .container {
+        grid-template-columns: 1fr;
+    }
+}
