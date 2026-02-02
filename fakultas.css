@@ -280,4 +280,65 @@ body {
     padding: 20px 0;
     margin-top: 40px;
     font-size: 0.9em;
+
+}
+/* DESAIN RESPONSIVE */
+@media (max-width: 992px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 88px;
+        left: 0;
+        width: 100%;
+        background-color: var(--light-color);
+        flex-direction: column;
+        text-align: center;
+        border-top: 1px solid #eee;
+    }
+    .navbar.active {
+        display: flex;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .navbar ul li {
+        padding: 15px 0;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .header-actions {
+        display: none;
+    }
+    .info-cards .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .top-header { display: none; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content p { font-size: 1rem; }
+    .about-us .container {
+        flex-direction: column;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-cards .container {
+        grid-template-columns: 1fr;
+    }
 }
